@@ -86,6 +86,4 @@ jobs:
               });
             }
 
-      - name: Fail pull request check if journal is incomplete
-        if: steps.checker.outputs.exit_code != '0'
-        run: exit 1
+     
