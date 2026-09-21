@@ -67,8 +67,7 @@ idempotent write is *guaranteed* to change nothing — which is precisely wrong 
 retrying is a side effect that got dropped. Retry the effect, then do not trust it: put the user
 back in a state they can act from.
 
-**Detect it again.** When you write a retry, ask what observable changes on the second attempt. If
-the answer is "nothing, it's idempotent," it is not a retry.
+
 
 ---
 
